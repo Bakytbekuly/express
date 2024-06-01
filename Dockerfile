@@ -13,5 +13,7 @@ RUN npm install
 # Copy the rest of the application files to the container
 COPY . .
 
+# Expose the port the app runs on
+EXPOSE 3010
 # Set the default command to run the application
 CMD ["node", "index.js"]
